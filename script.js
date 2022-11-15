@@ -16,5 +16,8 @@ function createBookElement(title)
 {
     const newTitleDiv = document.createElement("div");
     newTitleDiv.innerText = title;
+    //make a new div called pages
+    //make a new radio form with 2 boxes that can be checked or unchecked
+    //make the last div called authorName
     bookContainer.appendChild(newTitleDiv);
 }
