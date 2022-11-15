@@ -5,7 +5,28 @@ body
 
 .Book
 {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
     width: 250px;
     height: 300px;
     background-color: aliceblue;
+
+    background: linear-gradient(to top left,rgb(248, 248, 248) 15%, #88d9ff, #38bdf8 80%,#0094d3);
+    border-radius: 20px;
+}
+
+
+
+
+.bookComponent
+{
+    margin-left: 10px;
+    flex: 1;
+}
+
+.bookBody
+{
+    flex: 2;
 }
