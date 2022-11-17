@@ -13,12 +13,42 @@ body
     height: 300px;
     background-color: aliceblue;
 
-    background: linear-gradient(to top left,rgb(248, 248, 248) 15%, #88d9ff, #38bdf8 80%,#0094d3);
+    background: linear-gradient(to bottom left,rgb(248, 248, 248) 15%, #88d9ff, #38bdf8 80%,#0094d3);
     border-radius: 20px;
 }
+.bookHeader
+{
+    display: flex;
+    justify-content: space-between
+}
 
+.titleContent, .bookpages, .hasreadButtons
+{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    font-size: 40px;
+    box-shadow: 0px 4px 3px -3px black;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 #FFD700, 0 1px #FFD700, 1px 0 #FFD700, 0 -1px #FFD700;
+}
 
-
+.deleteBtn
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    width: 70px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    border-color: rgb(192,192,192);
+    color: black;
+    font-size: 50px;
+    font-weight: 100;
+    color: red;
+}
 
 .bookComponent
 {
@@ -29,4 +59,56 @@ body
 .bookBody
 {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
 }
+
+.bookpages
+{
+    width: 200px;
+    justify-content: start;
+    font-size: 20px;
+}
+.hasreadButtons
+{
+    width: 200px;
+    font-size: 19px;
+}
+.radioForm
+{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+label
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.no
+{
+    text-shadow: -1px 0 #ff0000, 0 1px #ff0000, 1px 0 #ff0000, 0 -1px #ff0000;
+}
+.yes
+{
+    text-shadow: -1px 0 #09ff00, 0 1px #09ff00, 1px 0 #09ff00, 0 -1px #09ff00;
+}
+.bookFooter
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.authorName
+{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 0 #FFD700, 0 1px #FFD700, 1px 0 #FFD700, 0 -1px #FFD700;
+    box-shadow: 0px 4px 3px -3px rgb(255, 255, 255);
+}
+
+

@@ -14,25 +14,31 @@
         <div class="Book">
 
 
-            <div class="header bookComponent">
+            <div class="bookHeader bookComponent">
 
-                <div class="bookTitle bookComponent">Title</div>
-                <button class="deleteBtn">Delete</button>
+                <div class="bookTitle"><div class="titleContent">Title</div></div>
+                <button class="deleteBtn">X</button>
 
             </div>
 
             <div class="bookBody bookComponent">
 
-                <div class="bookpages">23</div>
+                <div class="bookpages">-Pages:23</div>
+
+                <div class="hasreadButtons">Have you read this book?</div>
 
                 <form class="radioForm" action="">
 
-                    <div class="hasreadButtons">Have you read this book?</div>
-                    <input type="radio" id="yes" name="yesOption" value="yes">
-                    <input type="radio" id="no" name="yesOption" value="no">
-                    <br>
-                    <label for="yes">yes</label>
-                    <label for="no">no</label>
+                    <div>
+                        <input type="radio" class="yesBtn" id="yes" name="Option" value="yes">
+                        <br>
+                        <label class="yes" for="yes">yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="noBtn" id="no" name="Option" value="no">
+                        <br>
+                        <label class="no" for="no">no</label>
+                    </div>
 
                 </form>
 
@@ -40,7 +46,7 @@
 
             <div class="bookFooter bookComponent">
 
-                <div class="authorName">- Bob</div>
+                <div class="authorName">By: Bob</div>
 
             </div>
 
