@@ -22,7 +22,7 @@ body
     justify-content: space-between
 }
 
-.titleContent, .bookpages, .hasreadButtons
+.titleContent, .bookPages, .hasreadButtons
 {
     display: flex;
     justify-content: center;
