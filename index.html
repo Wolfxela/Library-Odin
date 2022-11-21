@@ -11,47 +11,54 @@
 <body>
     <div class="BookContainer">
 
-        <div class="Book">
+    </div>
 
-
-            <div class="bookHeader bookComponent">
-
-                <div class="bookTitle"><div class="titleContent">Title</div></div>
-                <button class="deleteBtn">X</button>
-
-            </div>
-
-            <div class="bookBody bookComponent">
-
-                <div class="bookPages">-Pages:23</div>
-
-                <div class="hasreadButtons">Have you read this book?</div>
-
-                <form class="radioForm" action="">
-
-                    <div>
-                        <input type="radio" class="yesBtn" id="yes" name="Option" value="yes">
+    <div class="formDiv">
+        <form class="inputForm" action="">
+  
+                <div>
+                    <label for="titleInput">
+                        <span>Title!*</span>
                         <br>
-                        <label class="yes" for="yes">yes</label>
-                    </div>
-                    <div>
-                        <input type="radio" class="noBtn" id="no" name="Option" value="no">
+                        <input type="text" class="titleInput" name="titleInput" id="titleInput" placeholder="Bob's book..." required minlength="1" maxlength="20">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="authorInput">
+                    
+                        <span>author!*</span>
                         <br>
-                        <label class="no" for="no">no</label>
-                    </div>
+                        <input type="text" class="authorInput" name="authorInput" id="authorInput" placeholder="Bob..." required minlength="1" maxlength="20">
+                    
+                    </label>
+                </div>
 
-                </form>
+                <div>
+                    <label for="pageNumbers">
+                    
+                        <span>Pages!*</span>
+                        <br>
+                        <input type="number" class="pageNumbers" name="pageNumbers" id="pageNumbers" placeholder="30..." required minlength="1" maxlength="1000">
+                    </label>
+                </div>
 
-            </div>
+                
+                <div>
+                    <label for="haveYouRead">
+                        <span>Have you read this book?</span>
+                        <br>
+                        <input type="text" class="haveYouRead" name="haveYouRead" id="haveYouRead" placeholder="Yes/No" pattern="(Yes|No|yes|no|y|n|Y|N) /gi" required minlength="1" maxlength="3">
+                    </label>
+                </div>
+                
 
-            <div class="bookFooter bookComponent">
 
-                <div class="authorName">By: Bob</div>
+                <button type="submit">Submit</button>
 
-            </div>
-
-        </div>
-
+            </label>
+        
+        </form>
     </div>
 </body>
 </html>
