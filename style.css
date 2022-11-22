@@ -109,5 +109,57 @@ label
     text-shadow: -1px 0 #FFD700, 0 1px #FFD700, 1px 0 #FFD700, 0 -1px #FFD700;
     box-shadow: 0px 4px 3px -3px rgb(255, 255, 255);
 }
+.formDiv
+{
+    background-color: #070b2c;
+    box-shadow: 0px 0px 20px 0px black;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formLabel
+{
+    color: black;
+    font-size: 20px;
 
+}
+.inputForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 95%;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #ffffff;
+
+}
+
+input
+{
+    border-radius: 5px;
+}
+input:valid
+{
+    border-color: #09ff00;
+    border-style: solid;
+}
+input:invalid
+{
+    border-color: #ff0000;
+    border-style: solid;
+}
+input:hover
+{
+    border-color:#0094d3;
+    box-shadow: 0px 0px 10px 0px #0094d3;
+    border-style: solid;
+}
 

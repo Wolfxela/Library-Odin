@@ -17,17 +17,17 @@
         <form class="inputForm" action="">
   
                 <div>
-                    <label for="titleInput">
-                        <span>Title!*</span>
+                    <label class="formLabel" for="titleInput">
+                        <span class="formLabel">Title!*</span>
                         <br>
                         <input type="text" class="titleInput" name="titleInput" id="titleInput" placeholder="Bob's book..." required minlength="1" maxlength="20">
                     </label>
                 </div>
 
                 <div>
-                    <label for="authorInput">
+                    <label class="formLabel" for="authorInput">
                     
-                        <span>author!*</span>
+                        <span class="formLabel">Author!*</span>
                         <br>
                         <input type="text" class="authorInput" name="authorInput" id="authorInput" placeholder="Bob..." required minlength="1" maxlength="20">
                     
@@ -35,9 +35,9 @@
                 </div>
 
                 <div>
-                    <label for="pageNumbers">
+                    <label class="formLabel" for="pageNumbers">
                     
-                        <span>Pages!*</span>
+                        <span class="formLabel">Pages!*</span>
                         <br>
                         <input type="number" class="pageNumbers" name="pageNumbers" id="pageNumbers" placeholder="30..." required minlength="1" maxlength="1000">
                     </label>
@@ -45,10 +45,10 @@
 
                 
                 <div>
-                    <label for="haveYouRead">
-                        <span>Have you read this book?</span>
+                    <label class="formLabel" for="haveYouRead">
+                        <span class="formLabel">Did you read it?*</span>
                         <br>
-                        <input type="text" class="haveYouRead" name="haveYouRead" id="haveYouRead" placeholder="Yes/No" pattern="(Yes|No|yes|no|y|n|Y|N) /gi" required minlength="1" maxlength="3">
+                        <input type="text" class="haveYouRead" name="haveYouRead" id="haveYouRead" placeholder="Yes/No" pattern="(Yes|No|yes|no|y|n|Y|N)" required minlength="1" maxlength="3">
                     </label>
                 </div>
                 
