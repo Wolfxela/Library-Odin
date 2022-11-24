@@ -37,6 +37,8 @@ function createBookElement(title,pages,author,hasReadBook)
   deleteBtn.innerText = 'X';
   bookHeader.appendChild(deleteBtn);
 
+  deleteBtn.addEventListener("click", function(){ bookdiv.remove()});
+
   //append bookHeader to book for it to become a child of book
   bookdiv.appendChild(bookHeader);
 
@@ -124,5 +126,5 @@ function createBookElement(title,pages,author,hasReadBook)
 
 
 
-  document.body.appendChild(bookdiv);
+  bookContainer.appendChild(bookdiv);
 }
