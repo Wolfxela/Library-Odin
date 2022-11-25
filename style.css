@@ -123,12 +123,11 @@ label
     height: 400px;
     border-radius: 30px;
     padding: 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 50%;
-    top: 30px;
+    right: 45%;
+    top: 20%;
 
 
     display: none;
@@ -175,7 +174,7 @@ input:hover
     border-style: solid;
 }
 
-.submit
+.submitBtn
 {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 30px;

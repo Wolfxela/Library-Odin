@@ -1,5 +1,7 @@
-let myLibrary = [];
-const bookContainer = document.querySelector('.BookContainer');
+const newBookButton = document.querySelector(".newBookButton");
+const formBtn = document.querySelector(".submitBtn")
+const bookForm = document.querySelector(".formDiv");
+const bookContainer = document.querySelector(".BookContainer");
 
 function BookMaker(title,author,pages,hasbeenread) {
   this.title = title;
@@ -8,9 +10,22 @@ function BookMaker(title,author,pages,hasbeenread) {
   this.hasbeenread = hasbeenread;
 }
 
-function addBookToLibrary(book) {
-  myLibrary.push(book);
-}
+newBookButton.addEventListener("click", function(){ bookForm.style.display = 'flex'});
+formBtn.addEventListener("click", function(Event){ 
+  var tempvalue;
+ if(document.getElementById('titleInput').checkValidity() == true && document.getElementById('pageNumbers').checkValidity() == true && document.getElementById('authorInput').checkValidity() == true && document.getElementById('authorInput').checkValidity() == true)
+ {
+  if(document.getElementById('haveYouRead').value === "Yes" || document.getElementById('haveYouRead').value === "yes" || document.getElementById('haveYouRead').value === "Y" || document.getElementById('haveYouRead').value === "y")
+  {
+    tempvalue = true;
+  }
+  else
+  {
+    tempvalue = false;
+  }
+  createBookElement(document.getElementById('titleInput').value, document.getElementById('pageNumbers').value, document.getElementById('authorInput').value,tempvalue); bookForm.style.display = 'none'
+ }
+});
 
 function createBookElement(title,pages,author,hasReadBook)
 {
